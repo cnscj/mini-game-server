@@ -1,0 +1,5 @@
+return {
+	No = 0,
+    Male = 1,		--男
+    Female = 2,		--女
+}

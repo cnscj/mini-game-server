@@ -1,0 +1,9 @@
+._.DS_Store
+.DS_Store
+
+.settings
+.history
+.project
+.cocos-project.json
+data-server/node_modules
+front-server/node_modules
