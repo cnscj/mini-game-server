@@ -1,5 +1,5 @@
 const util = require('util')
-const description = require("../config/store/description")
+const description = require("../config/deploy/description")
 var M = {}
 
 M.getString = function(id,...params) {
