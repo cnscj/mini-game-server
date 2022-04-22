@@ -1,10 +1,12 @@
 const express = require("express")
 const router = express.Router()
 
-router.use('/test',require("./test"))
-
 router.get("/",function (req,res) {
-    res.send("主页面")
+    res.send("测试页面")
+})
+
+router.get("/action",function (req,res) {
+    res.send("测试页面action")
 })
 
 module.exports = router
