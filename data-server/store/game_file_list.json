@@ -1,3 +1,14 @@
 {
-    
+    "version" : 100,
+    "date" : 1650954831,
+    "files" : [
+        {
+            "path" : "xxxxx",
+            "md5" : "xxxx"
+        },
+        {
+            "path" : "xxxxx",
+            "md5" : "xxxx"
+        }
+    ]
 }

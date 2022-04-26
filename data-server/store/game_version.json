@@ -1,4 +1,5 @@
 {
-    "version" : "100000",
-    "versionStr" : "1.0.0"
+    "version" : 100,
+    "versionStr" : "1.0.0",
+    "versionDate" : 1650954831
 }

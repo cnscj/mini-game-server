@@ -5,13 +5,13 @@
  Source Server Type    : MySQL
  Source Server Version : 80028
  Source Host           : localhost:3306
- Source Schema         : test
+ Source Schema         : center_data
 
  Target Server Type    : MySQL
  Target Server Version : 80028
  File Encoding         : 65001
 
- Date: 26/04/2022 11:08:41
+ Date: 26/04/2022 14:29:19
 */
 
 SET NAMES utf8mb4;
@@ -22,16 +22,11 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-BEGIN;
-INSERT INTO `user` (`id`, `name`) VALUES (1, 'admin');
-COMMIT;
+  `id` int DEFAULT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `psw_md5` varchar(255) NOT NULL,
+  `creation_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`user_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 SET FOREIGN_KEY_CHECKS = 1;
