@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@grpc/grpc-js": "^1.6.7",
-    "@grpc/proto-loader": "^0.6.9"
+    "@grpc/proto-loader": "^0.6.9",
+    "nodejs-websocket": "^1.7.2"
   },
   "name": "front-server",
   "description": "",
